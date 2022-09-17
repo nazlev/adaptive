@@ -1,0 +1,403 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: sans-serif
+
+.header
+    height: 80px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.backGround
+    position: relative
+    height: 50vh
+    background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%)
+    opacity: 0.2
+
+.top
+    width: 100vw
+    top: 0
+    padding-left: 16px
+    padding-right: 14px
+    position: absolute
+    &__content
+        display: flex
+
+    &__info
+        text-align: center
+    &__name
+        font-weight: 400
+        font-size: 32px
+        line-height: 38px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        margin-bottom: 10px
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        color: #1F3F68
+        opacity: 0.6
+        margin-bottom: 30px
+    &__btn
+            background: #5A98D0
+            box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+            border-radius: 10px 
+            border: none
+            cursor: pointer
+            width: 108px
+            height: 27.42px
+            text-align: center
+            color: #FFFFFF
+            font-weight: 400
+            font-size: 12px
+            line-height: 26px
+
+.open
+    color: #356EAD
+    font-size: 20px
+
+.product
+    padding-left: 17px
+    padding-right: 17px
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__name
+        font-size: 24px
+        line-height: 28px
+        font-weight: 400
+        letter-spacing: 0.05em
+        margin-top: 48px
+    &__main
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 32px
+        height: 448px
+        width: 335px
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        border-radius: 10px
+    &__photo
+        display: flex
+        justify-content: center
+        padding-top: 40px
+    &__info
+        margin-top: 45px
+        text-align: left
+        width: 280px
+        &_head
+            height: 52px
+            font-weight: 400
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.05em
+            color: #1F3F68
+        &_text
+            margin-top: 14px
+            font-weight: 400
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #1F3F68
+            opacity: 0.6
+        &_btn
+            margin-top: 25px
+            font-weight: 400
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.05em
+            color: #5A98D0
+            border: none
+            background-color: white
+        &_i
+            margin-left: 5px
+    &__lorem
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__p
+        font-weight: 300
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #222222
+        margin-top: 32px
+        width: 343px
+
+.image
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__home
+        height: 145px
+        width: 343px
+        background-size: cover
+        margin-top: 82px
+        border-radius: 8px
+        position: relative
+    &__text
+        position: absolute
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        text-align: right
+        color: #FFFFFF
+        top: 16px
+        left: 16px
+        &_p
+            right: 16px
+    &__app
+        margin-bottom: 64px
+    &__cart
+        height: 260px
+        width: 343px
+        border-radius: 8px
+        background-size: cover
+        margin-top: 16px
+        position: relative
+
+.footer
+    display: flex
+    flex-direction: column
+    background: #316099
+    text-align: center
+    color: #FFFFFF 
+    &__main
+        border-bottom: 1px solid #ccc
+        &_left
+            display: flex
+            flex-direction: column
+            align-items: center
+    &__head
+        font-weight: 400
+        font-size: 24px
+        line-height: 28px
+        width: 200px
+        margin-top: 18px
+    &__text
+        line-height: 26px
+        letter-spacing: 0.05em
+        opacity: 0.6
+        padding-left: 16px
+        padding-right: 16px
+        margin-top: 32px
+    &__btn
+        margin-top: 40px
+        margin-bottom: 40px
+        font-size: 16px
+        color: #fff
+        letter-spacing: 0.04em
+        background: #5A98D0
+        border: none
+        width: 108.23px
+        height: 31.48px
+        text-align: center
+    &__info
+        margin-top: 32px
+    &__contact
+        display: flex
+        text-align: left
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        letter-spacing: 0.05em
+        padding-left: 16px
+        &_text
+            width: 250px
+            padding-left: 23px
+            margin-bottom: 17px
+    &__copyright
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #FFFFFF
+        opacity: 0.4
+        margin-bottom: 32px
+        margin-top: 15px
+        
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px)
+    .top
+        height: 376px
+        &__photo,
+        &__photoBig
+            display: none
+
+@media (min-width: 768px)
+    .top
+        &__content
+            position: relative
+        &__info
+            margin-top: 112px
+            text-align: left
+        &__name
+            width: 510px
+            font-size: 64px
+            line-height: 74px
+            margin-bottom: 32px
+        &__text
+            width: 385px
+            margin-bottom: 72px
+           
+        &__btn
+            font-size: 16px
+            width: 220px
+            height: 56px
+    .product
+        &__name
+            font-size: 36px
+            line-height: 46px
+        &__p
+            width: 520px
+    .image
+        &__home
+            width: 705px
+            height: 297px
+        &__app
+            display: flex
+            justify-content: space-between
+            width: 705px
+            margin-bottom: 109px
+        &__cart
+            width: 336px
+            height: 253px
+        &__text
+            font-weight: 300
+            font-size: 28px
+            line-height: 46px
+            letter-spacing: 0.05em
+            &_p
+                top: 64px
+                right: 64px
+    .footer
+        align-items: center
+        &__head
+            font-size: 33px
+            line-height: 40px
+            width: 330px
+            padding-left: 15px
+            letter-spacing: 0.05em
+        &__main
+            display: flex
+            align-items: center
+            justify-content: center
+            &_left
+                width: 350px
+                text-align: left
+                align-items: flex-start
+                margin: 30px 40px 40px 0px
+        &__info
+            width: 510px
+            display: flex
+            flex-direction: column
+        &__contact
+            &_text
+                width: 510px
+        &__copyright
+            text-align: left
+            width: 480px
+                
+    
+
+@media  (min-width: 768px) and (max-width: 1023px)
+    .backGround
+        height: 768px 
+    .top
+        padding-left: 32px
+        padding-right: 32px
+        &__photo
+            position: absolute
+            right: 0
+            bottom: -80px  
+        &__photoBig
+            display: none  
+    
+    
+    
+@media (min-width: 1024px) 
+    .backGround
+        height: 768px
+    .top
+        padding-left: 50px
+        padding-right: 50px
+        &__photo
+            display: none
+        &__photoBig
+            position: absolute
+            right: 0
+            bottom: -110px  
+    .product
+        &__main
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+        &__p
+            width: 750px
+    .footer
+        &__main
+            &_left
+                width: 525px
+                margin: 30px 150px 40px 0px
+        &__btn
+            width: 236.63px
+            height: 56px
+            font-size: 22px
+        &__info
+            width: 1000px
+            margin-left: 80px
+            flex-direction: row
+            justify-content: space-between
+        &__contact
+            &_text
+                width: 250px
+        &__copyright
+            width: 900px
+
+@media (min-width: 1366px) 
+    .center
+        max-width: 1440px
+        margin: auto
+    .top
+        padding-left: 114px
+        padding-right: 114px
+        top: 0 
+        left: 0 
+        bottom: 0
+        right: 0
+    .product
+        &__main
+            width: 1140px
+    .image
+        &__home
+            width: 1140px
+            height: 480px
+        &__app
+            width: 1140px
+        &__cart
+            width: 554px
+            height: 417px
+        &__text
+            left: 32px
+            top: 32px
+            &_p
+                left: 64px
+                top: 64px
